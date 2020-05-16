@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet" />
+
+    <title>Drag n Drop Todos</title>
+  </head>
+  <body>
+    <div class="main">
+      <ul class="list">
+        <li class="list__column">
+          <div class="list__column--title">
+            All
+          </div>
+          <p class="list__column--tip">Move todo here</p>
+          <div class="list__column--body">
+            <div class="todo-card" draggable="true">
+              <h3 class="todo-card__title">Buy milk</h3>
+              <div class="todo-card__splitter"></div>
+              <p class="todo-card__description">Home routine...</p>
+            </div>
+            <div class="todo-card" draggable="true">
+              <h3 class="todo-card__title">Feed my dog</h3>
+              <div class="todo-card__splitter"></div>
+              <p class="todo-card__description">I love Charly <3</p>
+            </div>
+          </div>
+        </li>
+        <li class="list__column">
+          <div class="list__column--title">
+            In Progress
+          </div>
+          <p class="list__column--tip">Move todo here</p>
+
+          <div class="list__column--body"></div>
+        </li>
+        <li class="list__column">
+          <div class="list__column--title">
+            Test
+          </div>
+          <p class="list__column--tip">Move todo here</p>
+
+          <div class="list__column--body"></div>
+        </li>
+        <li class="list__column">
+          <div class="list__column--title">
+            Done
+          </div>
+          <p class="list__column--tip">Move todo here</p>
+
+          <div class="list__column--body"></div>
+        </li>
+      </ul>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

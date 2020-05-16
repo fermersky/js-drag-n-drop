@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.main {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.list__column {
+  list-style-type: none;
+  width: 25%;
+  background: #eee;
+  margin: 20px;
+  padding: 20px;
+  padding-bottom: 60px;
+  box-shadow: 5px 5px 10px #0000003b;
+}
+
+.list__column--title {
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+
+.list__column--tip {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+  display: none;
+}
+
+.list__column--body {
+  margin-top: 20px;
+}
+
+.todo-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px dashed #ccc;
+  cursor: all-scroll;
+}
+
+.todo-card * {
+  pointer-events: none;
+}
+
+.todo-card__splitter {
+  width: 5%;
+  height: 2px;
+  background: rgb(216, 133, 10);
+  margin: 5px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: 2px dashed #313131;
+}
+
+.hovered > .list__column--tip {
+  display: block;
+}
